@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from './index.less';
 import { useIntl } from 'umi';
+import styles from './index.less';
 
 
-export default () => {
+
+
+export default () => {  
   const intl = useIntl();
   return (
     <div>

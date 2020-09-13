@@ -1,12 +1,16 @@
 import React from 'react';
-import styles from './index.css';
+import { Layout } from 'antd';
+import HeadNav from '@/pages/HeadNav'
+import styles from './index.less';
 
+const {Content } = Layout;
 const BasicLayout: React.FC = props => {
-  return (
-    <div>
-      {props.children}
-    </div>
-  );
+    return (
+        <Layout>
+            <HeadNav />
+            <Content>{props.children}</Content>
+        </Layout>
+    );
 };
 
 export default BasicLayout;
