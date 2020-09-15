@@ -8,14 +8,12 @@ export default defineConfig({
     {
       path: '/',
       component: '@/layouts/index',
-      routes: [
-        { path: '/', component: '@/pages/index' }
-      ]
+      routes: [{ path: '/', component: '@/pages/index' }],
     },
   ],
   title: 'Yay!',
   theme: {
-    '@primary-color': '#1DA57A',
+    '@primary-color': '#323232',
   },
   antd: {
     dark: false,
@@ -25,7 +23,7 @@ export default defineConfig({
     immer: true,
     hmr: false,
   },
-  locale:{
+  locale: {
     default: 'zh-CN',
     antd: false,
     title: false,
